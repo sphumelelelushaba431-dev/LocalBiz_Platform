@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Local Biz Platform",
+    "slug": "localbizplatform",
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#5B4BC4"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.group15.localbizplatform"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#5B4BC4"
+      },
+      "package": "com.group15.localbizplatform",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Local Biz to use your location to find businesses near you."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Local Biz to use your camera to upload business photos."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Local Biz to access your photos to upload business images."
+        }
+      ]
+    ]
+  }
+}
